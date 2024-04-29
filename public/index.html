@@ -4,15 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, World!</title>
+    <title>Tyler Boyd, A Dev</title>
 </head>
 <body>
     <h1>Hello, World!</h1>
+    <h2>My name is <a target="_blank" href="https://en.wikipedia.org/wiki/Tyler_(name)" class="emph">Tyler Boyd</a></h2>
+    <p>
+        I am a software engineer from Kansas City. I have been breaking and fixing computers for my whole life, and have been developing professionally for almost 5 years now.<br/><br/>Almost all of my professional experience is with Full Stack Web Development, using HTML, JavaScript, CSS, and Go. I have gained experience in several front end frameworks, including SvelteKit, Vue, and React. I have also had the great joy and honor of working with several different databases and backend languages, my favorite being the Postgres and Go combination.
+    </p>
+    <p>
+        I am constantly learning new technologies, frameworks, languages, and tools. It is my favorite part about this field, that there is always something new to learn, and something to get better at. I am trying to contribute more and more to the open source communities, as a way to learn and master new technologies.
+    </p>
+    <h2>Some things I'm really great at</h2>
+    <ul>
+        <li>Creating modern web applications with SvelteKit, JavaScript, and CSS.</li>
+        <li>Building backend applications, using MongoDB or Postgres for the database, and Go for the REST API.</li>
+        <li>Building CLI tooling applications with Go.</li>
+        <li>Learning new tech, and staying up to date with what is going on in tech.</li>
+    </ul>
+    <h2>Some things I have been learning</h2>
+    <ul>
+        <li>HTMX - seems like a fun thing, became all the rage on twitter.</li>
+        <li>Flutter - building a cross platform mobile app for a friend, it was a good time to try this out!</li>
+    </ul>
+    <h2>Some of my non-dev hobbies</h2>
+    <ul>
+        <li>Video games, lots of Fallout 4 and Helldivers recently</li>
+        <li>Dungeons and Dragons with the friends - Level 12 Paladin Druid</li>
+        <li>Reading, trying to go through some fantasy classics, reading Wheel of Time right now</li>
+    </ul>
+    <h2>Where you can find me</h2>
+    <p>
+        You can find me on <a class="emph" target="_blank" href="https://twitter.com/tyboyd_">Twitter/X</a>, or on <a class="emph" target="_blank" href="https://github.com/ty-e-boyd">GitHub</a>. You can also send me an email at <a class="emph" href="mailto:ty@tyboyd.dev">ty@tyboyd.dev</a>
+    </p>
 </body>
 </html>
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+    * {
+        font-family: "JetBrains Mono", monospace;
+        color: #FBFAF8;
+    }
+    html, body {
+        margin: 0px;
+        padding: 8px;
+        background-color: #000505;
+    }
     h1 {
         font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    p, a, li, ul {
+        font-size: 16px;
+    }
+    .emph {
+        text-decoration: underline;
+        text-decoration-color: #E05263;
+        font-size: 21px;
+        cursor: pointer;
     }
 </style>
 {{end}}
