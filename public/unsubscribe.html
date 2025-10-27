@@ -1,0 +1,132 @@
+{{define "unsubscribe"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsubscribe - The Paper</title>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">😢</div>
+        <h1>You've Been Unsubscribed</h1>
+        <p class="description">
+            We're sorry to see you go! You have been successfully unsubscribed from The Paper newsletter.
+        </p>
+        <p class="description">
+            You will no longer receive daily tech news digests from us.
+        </p>
+
+        <div class="actions">
+            <a href="/subscribe" class="btn btn-primary">Changed your mind? Resubscribe</a>
+            <a href="/" class="btn btn-secondary">Back to home</a>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+    * {
+        font-family: "JetBrains Mono", monospace;
+        color: #FBFAF8;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #000505;
+        min-height: 100vh;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .container {
+        max-width: 500px;
+        width: 100%;
+        background-color: #0a0f0f;
+        padding: 40px;
+        border-radius: 12px;
+        border: 1px solid #1a2020;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    .icon {
+        font-size: 64px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        color: #FBFAF8;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #a0a8a8;
+        margin-bottom: 15px;
+    }
+
+    .actions {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 14px 24px;
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary {
+        background-color: #E05263;
+        color: #FBFAF8;
+    }
+
+    .btn-primary:hover {
+        background-color: #c94455;
+        transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+        background-color: transparent;
+        color: #a0a8a8;
+        border: 1px solid #2a3030;
+    }
+
+    .btn-secondary:hover {
+        color: #FBFAF8;
+        border-color: #E05263;
+    }
+
+    @media (max-width: 600px) {
+        .container {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        .icon {
+            font-size: 48px;
+        }
+    }
+</style>
+{{end}}
